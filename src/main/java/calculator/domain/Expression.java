@@ -1,5 +1,6 @@
 package calculator.domain;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Expression {
@@ -21,4 +22,15 @@ public class Expression {
         return Pattern.matches(String.valueOf(defaultRegex), input);
     }
 
+    public String getCustomDelimiter() {
+        Matcher matcher = customRegex.matcher(input);
+        matcher.matches();
+        return matcher.group(1);
+    }
+
+    public String getBody() {
+        Matcher matcher = customRegex.matcher(input);
+        matcher.matches();
+        return matcher.group(2);
+    }
 }
