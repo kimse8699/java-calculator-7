@@ -52,6 +52,4 @@ public class Delimiter {
         }
         return numList;
     }
-
-
 }

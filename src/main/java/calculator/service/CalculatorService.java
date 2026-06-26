@@ -5,7 +5,7 @@ import calculator.domain.Num;
 
 import java.util.List;
 
-public class CalculateService {
+public class CalculatorService {
 
     public int calculateInput(String input) {
         Delimiter delimiter = new Delimiter(input);
